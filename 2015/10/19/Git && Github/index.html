@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Git &amp;amp;&amp;amp; Github学习目标
+布置Git环境
+初次使用Git
+下载、上传操作
+撤销操作
+分支功能
+
+下载git
+官方版本下载:
+
+http://git-scm.com/download/win
+http://msysgit.github.com/
+
+GitHub for Windows:
+
+https://desktop.github.com/
+以上两种Git工具，建议都下载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2015/10/19/Git && Github/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Git &amp;amp;&amp;amp; Github学习目标
+布置Git环境
+初次使用Git
+下载、上传操作
+撤销操作
+分支功能
+
+下载git
+官方版本下载:
+
+http://git-scm.com/download/win
+http://msysgit.github.com/
+
+GitHub for Windows:
+
+https://desktop.github.com/
+以上两种Git工具，建议都下载">
+<meta property="og:image" content="http://yoursite.com/./img/readme/svn_03.png">
+<meta property="og:image" content="http://yoursite.com/./img/readme/svn_01.png">
+<meta property="og:image" content="http://yoursite.com/./img/readme/svn_02.png">
+<meta property="og:updated_time" content="2015-10-19T06:55:14.047Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Git &amp;amp;&amp;amp; Github学习目标
+布置Git环境
+初次使用Git
+下载、上传操作
+撤销操作
+分支功能
+
+下载git
+官方版本下载:
+
+http://git-scm.com/download/win
+http://msysgit.github.com/
+
+GitHub for Windows:
+
+https://desktop.github.com/
+以上两种Git工具，建议都下载">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Git &amp;&amp; Github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/19/Git && Github/" class="article-date">
+  <time datetime="2015-10-19T06:55:14.047Z" itemprop="datePublished">2015-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Git_&amp;&amp;_Github">Git &amp;&amp; Github</h1><h2 id="学习目标">学习目标</h2><ol>
+<li>布置Git环境</li>
+<li>初次使用Git</li>
+<li>下载、上传操作</li>
+<li>撤销操作</li>
+<li>分支功能</li>
+</ol>
+<h2 id="下载git">下载git</h2><ul>
+<li>官方版本下载:</li>
+</ul>
+<p><a href="http://git-scm.com/download/win" target="_blank" rel="external">http://git-scm.com/download/win</a></p>
+<p><a href="http://msysgit.github.com/" target="_blank" rel="external">http://msysgit.github.com/</a></p>
+<ul>
+<li>GitHub for Windows:</li>
+</ul>
+<p><a href="https://desktop.github.com/" target="_blank" rel="external">https://desktop.github.com/</a></p>
+<p>以上两种Git工具，建议都下载来试试，个人使用 Git Shell 比较多。</p>
+<h2 id="了解命令行">了解命令行</h2><p>一般在使用Git命令时，我们还会经常使用到 Mac终端（Terminal）/ Windows命令窗口 (cmd) 命令。掌握以下命令会对终端/窗口操作很用帮助。</p>
+<table>
+<thead>
+<tr>
+<th>Windows</th>
+<th>Mac OS/Linux)</th>
+<th>描述</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>新建目录</td>
+<td>mkdir testdirectory</td>
+</tr>
+<tr>
+<td>del</td>
+<td>rm</td>
+<td>删除文档/目录</td>
+<td>del c:\test\test.txt</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>复制文档</td>
+<td>copy <origin>c:\test\test.txt <copy>c:\windows\test.txt</copy></origin></td>
+</tr>
+<tr>
+<td>move</td>
+<td>mv</td>
+<td>移动文档</td>
+<td>move <from>c:\test\test.txt <from>c:\windows\test.txt</from></from></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>修改路径</td>
+<td>cd ./childdir</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>列出所有文档和路径</td>
+<td>dir</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>exit</td>
+<td>离开视窗</td>
+<td>exit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="创建一个本地_Git_仓库">创建一个本地 Git 仓库</h2><p>完成前面的准备工作后，现在正式开始学习Git的操作。</p>
+<p>首先启动 Git Shell ， <code>cd</code> 到你想要保存代码的地址，然后运行下面的执行，从远程Git仓库中克隆新建的项目到本地。</p>
+<pre><code>&gt; git clone <span class="string">https:</span><span class="comment">//github.com/jiangleo/git.git</span>
+</code></pre><p> <code>git clone [url]</code> clone操作并不只提取最新版本的文件快照，而是将远程 Git 仓库中的每一个文件的每一个版本都拉取到本地。 任何一个本地仓库或者远程仓库的地位都是一样的，它们都是一个全整的包含其历史版本的代码库。任何一处协同工作用的服务器发生故障，事后都可以用任何一个镜像出来的本地仓库恢复。</p>
+<h2 id="修改更新代码">修改更新代码</h2><ol>
+<li><p>在本地新建一个 hello.js文件</p>
+<p> alert(‘hello world!’);</p>
+</li>
+</ol>
+<p>此时 hello.js 文件，只是一个普通文件，并不是 Git 文件。我们可以通过 <code>git status</code> 查看 Git 仓库的状态。</p>
+<p>我们可以查看到 Git 会给我们一个提示</p>
+<pre><code>Untracked <span class="built_in">files</span>:
+  (use <span class="string">"git add &lt;file&gt;..."</span> <span class="built_in">to</span> <span class="built_in">include</span> <span class="operator">in</span> what will be committed)
+
+        hello.js
+</code></pre><p>Git 提示我们，在本地仓库中，有个一 hello.js 的文件， 他并不是一个 Git 的文件(<strong>Untracked files</strong>) 。</p>
+<ol>
+<li>将文件放入暂存区</li>
+</ol>
+<p>执行<code>git add &lt;file&gt;</code>将文件放到暂存区，</p>
+<pre><code>&gt; git <span class="keyword">add </span>hello.js
+</code></pre><p>然后执行 <code>git status</code> 再来查看仓库状态</p>
+<pre><code>Changes <span class="keyword">to</span> be committed:
+  (<span class="keyword">use</span> <span class="string">"git reset HEAD &lt;file&gt;..."</span> <span class="keyword">to</span> unstage)
+
+        <span class="keyword">new</span> <span class="keyword">file</span>:   hello.js
+</code></pre><p>执行 <code>git add</code> 指令后， hello.js 文件已经是一个 git 文件了， 但是这个时候， hello.js 文件还没有被提交。它处于一个待提交的状态 (Changes to be committed)，实际上它放在 git 的暂存区 (<strong>Staged</strong>) 。</p>
+<p>ps: </p>
+<p>这个暂存区的概念，比较难理解，这也是 svn 中没有的概念。想象一个场景，使用 svn ，我们修改了 a.js 然后等待 RD 给出接口， 我们并不会把 没有完成的 a.js 代码上传到代码仓库中。这个时候在修改其他文件的过程中，可能会不小心把 a.js 给覆盖了。</p>
+<p>如果使用 Git ，我们会把 a.js 保存在 暂存区 <strong>Staged</strong> 中，即使被覆盖，还有会一次挽救的机会。</p>
+<ol>
+<li>提交修改</li>
+</ol>
+<p>执行 <code>git commit -m &quot;commit message&quot;</code> 命令，提交代码并进行备注。</p>
+<pre><code>&gt; git commit -<span class="keyword">m</span> <span class="string">"test file"</span>
+</code></pre><p>这个时候，我们就真正的将 hello.js 提交到本地仓库中去了。我们可以通过回滚，在历史记录中轻松的找到其历史版本。再次强调下，在 Git 中，本地仓库包含每一个文件的每一个版本，是一个完整且独立的代码仓库，它不需要依赖远程仓库来进行提交和回滚。</p>
+<p>这个时候，让我们再次执行 <code>git status</code> 命令。</p>
+<pre><code>Your branch is ahead of 'origin/master' by 1 <span class="operator"><span class="keyword">commit</span>.
+  (<span class="keyword">use</span> <span class="string">"git push"</span> <span class="keyword">to</span> publish your <span class="keyword">local</span> commits)
+
+<span class="keyword">nothing</span> <span class="keyword">to</span> <span class="keyword">commit</span>, working <span class="keyword">directory</span> clean</span>
+</code></pre><p>没有什么可以提交，工作区是干净的。 这意味着该目录下的所有文件都是 Git 仓库的文件，并且没有改动 (<strong>Unmodified</strong>)。</p>
+<h2 id="理解文件状态">理解文件状态</h2><p>通过 <code>git add</code> <code>git commit -m &lt;message&gt;</code>2个命令，可以很轻松的将一个修改的文件，提交到本地的 Git 仓库。</p>
+<p>前文了解到了文件3种状态 Untracked Modified Staged，现在再次修改 hello.js 文件，来了解文件的另一种状态</p>
+<pre><code><span class="function"><span class="title">alert</span><span class="params">(<span class="string">'Hello guys!'</span>)</span></span>
+</code></pre><p>这个时候，查看仓库状态</p>
+<pre><code>(<span class="operator"><span class="keyword">use</span> <span class="string">"git add &lt;file&gt;..."</span> <span class="keyword">to</span> <span class="keyword">update</span> what will be committed)
+(<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working <span class="keyword">directory</span>)
+
+    modified:   hello.js
+
+<span class="keyword">no</span> changes added <span class="keyword">to</span> <span class="keyword">commit</span> (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</span>
+</code></pre><p>这个时候 Git 提醒我们，文件处于修改状态 (<strong>Modified</strong>)，再执行 <code>git add</code>，文件状态变为 <strong>Staged</strong> ，最后执行 <code>git commit</code> 命令，文件状态变为 <strong>Unmodified</strong>。</p>
+<p>总结一下 Git 文件的4种状态，并对比 SVN 文件状态便于理解</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>状态描述</th>
+<th>对比 SVN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Untracked</td>
+<td>不属于 Git 仓库但是在 Git 目录的文件</td>
+<td><img src="./img/readme/svn_03.png" alt="SVN"></td>
+</tr>
+<tr>
+<td>Unmodified</td>
+<td>文件和本地 Git 仓库文件一样</td>
+<td><img src="./img/readme/svn_01.png" alt="SVN"></td>
+</tr>
+<tr>
+<td>Modified</td>
+<td>文件有改动</td>
+<td><img src="./img/readme/svn_02.png" alt="SVN"></td>
+</tr>
+<tr>
+<td>Staged</td>
+<td>文件放在暂存区</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="推送更新到远程仓库">推送更新到远程仓库</h2><p>在 SVN 中有一个单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人们都通过客户端连到这台服务器，取出最新的文件或者提交更新。</p>
+<p>如前所述，每个 Git 都是一个完整的代码仓库，那么只需要指定一个远程仓库作为主仓库，所有人与这个主仓库进行同步，即可保证所以人的提交更新的代码一致。</p>
+<p>最开始，我们创建了一个远程 Github 的仓库，并以此克隆了一个本地仓库，现在将 Github 仓库作为主仓库，并将本地仓库的更新推送到远程仓库。</p>
+<p>首先查看下与本地仓库关联的远程仓库 <code>git remote</code></p>
+<pre><code>origin
+</code></pre><p>origin 是远程仓库名字的默认名字，这样可以用其名字来代替远程仓库的地址 <a href="https://github.com/jiangleo/git.git" target="_blank" rel="external">https://github.com/jiangleo/git.git</a></p>
+<p>执行 <code>git push &lt;remote&gt; &lt;branch&gt;</code> 命令，并用名字 origin 来代替真实的地址。branch 是分支的名，主分支默认名为 master</p>
+<pre><code><span class="label">git</span> <span class="keyword">push </span>origin master
+</code></pre><h2 id="查看demo">查看demo</h2><h2 id="理解Git工作流">理解Git工作流</h2><p><a href="http://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E5%9F%BA%E7%A1%80" target="_blank" rel="external">http://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E5%9F%BA%E7%A1%80</a></p>
+<h2 id="Git的撤销操作">Git的撤销操作</h2><h2 id="常用操作总结">常用操作总结</h2><h2 id="理解分支">理解分支</h2><p>## </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/10/19/Git && Github/" data-id="cifxm60k30000549iyiihszzz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/10/19/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/10/19/README/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/10/19/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/19/Git && Github/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/19/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/19/My-Test-Post/">My Test  Post</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
